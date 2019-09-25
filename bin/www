@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-require("babel-register")({
-    presets: ["react"]
+require("@babel/register")({
+    presets: ["@babel/preset-react"]
 });
 
 var debug = require("debug")("react-server-render-demo");
