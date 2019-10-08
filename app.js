@@ -10,7 +10,7 @@ const app = express();
 
 const pngCache = {}
 app.use(function(req, res, next) {
-  console.log(`[${req.method}][${new Date().getTime()}]${req.path}`)
+  console.log(`[${req.method}][${new Date().getTime()}]${req.originalUrl}`)
   next();
 });
 app.get('/', async(req, res) => {
